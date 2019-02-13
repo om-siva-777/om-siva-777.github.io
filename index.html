@@ -10,7 +10,7 @@
 
   <title>Omtimus</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/omtimus_logo.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/omtimus.min.css" rel="stylesheet">
+  <link href="css/omtimus.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -39,9 +39,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#products">Products</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#shop">Shop</a>
           </li>
@@ -62,54 +59,19 @@
   <!-- Header -->
   <header class="masthead">
     <div class="container">
-      <div class="intro-text">
-        <div class="intro-lead-in">Welcome To Omtimus!</div>
-        <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#products">Explore</a>
+      <div class="row">
+        <div class="intro-text col-12 col-md-6">
+          <div class="intro-heading text-uppercase" data-animation="fadeInUp" data-delay="100ms">Crafts In Books</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#shop" data-animation="fadeInUp" data-delay="700ms">Shop Now</a>
+        </div>
+        <!-- <div class="intro-text col-12 col-md-6">
+          <img src="img/shop/all.jpg" alt="" data-animation="slideInRight" data-delay="400ms">
+        </div> -->
       </div>
     </div>
   </header>
 
-  <!-- Products -->
-  <section id="products">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Products</h2>
-          <h3 class="section-subheading text-muted">Our Brands of Product.</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-6">
-          <span class="fa-stack fa-4x">
-            <a href="#shop">
-              <i class="fa fa-stack-1x fa-inverse">
-                <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
-              </i>
-            </a>  
-          </span>
-          <h4 class="service-heading">Crafts In Books</h4>
-          <p class="text-muted">Crafts in Books is one of its kind in children books which educates and engages kids with its unique designs and concepts.</p>
-        </div>
-        <div class="col-md-6">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Graphics & Games Design</h4>
-          <p class="text-muted"> Under Development</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto text-center">
-          <p class="small text-muted text-justify">The passion and zeal of a collective group of 3D animators and agriculturists had immense faith on creative ability of the children right from the very beginning. They finally discovered a perfect way to exhibit the creative talents of the kids. Every mortal being grew up having heard from their parents to read books. But children are extremely playful and active by nature. They find their own ways to get engaged with some co-curricular activities. What could be more enriching if children can engage in real time and creative activities through books? Parents, you can now relax and have peace of your mind, as your kids are about to discover their abilities through creative pursuit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  
   <!-- Shop Grid -->
   <section class="bg-light" id="shop">
     <div class="container">
@@ -122,26 +84,23 @@
       <h3 class="text-justify text-info">Ages 5+</h3>
       <div class="row">
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/1.jpg" alt="">
+          <img class="shadow-lg img-fluid" src="img/shop/1.jpg" alt="">
           <div class="shop-caption">
             <h4>Dino World</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-danger" href="https://www.amazon.in/dp/B07DVD4B9C/ref=cm_sw_r_wa_apa_i_xu2oCbS7CB6EY" target="_blank">Buy Now</a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/2.jpg" alt="">
+          <img class="shadow-lg img-fluid" src="img/shop/2.jpg" alt="">
           <div class="shop-caption">
             <h4>Farm Land</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-muted disabled" href="#shop">Coming Soon</a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/3.jpg" alt="">
+          <img class="shadow-lg img-fluid" src="img/shop/3.jpg" alt="">
           <div class="shop-caption">
             <h4>Carnival</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-muted disabled" href="#shop">Coming Soon</a>
           </div>
         </div>
@@ -149,26 +108,23 @@
       <h3 class="text-justify text-info">Ages 8+</h3>
       <div class="row">
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/4.jpg" alt="">
+          <img class="shadow-lg img-fluid" src="img/shop/4.jpg" alt="">
           <div class="shop-caption">
             <h4>Swatgun & Mobster</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-danger" href="https://www.amazon.in/dp/B07MMFLTNQ/ref=cm_sw_r_wa_apa_i_Su2oCbYDA9DP4" target="_blank">Buy Now</a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/5.jpg" alt="">          
+          <img class="shadow-lg img-fluid" src="img/shop/5.jpg" alt="">          
           <div class="shop-caption">
             <h4>Terrabug</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-muted disabled" href="#shop">Coming Soon</a>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 shop-item">
-          <img class="img-fluid" src="img/shop/6.jpg" alt="">
+          <img class="shadow-lg img-fluid" src="img/shop/6.jpg" alt="">
           <div class="shop-caption">
             <h4>Hazard</h4>
-            <p class="text-success"><i class="fa fa-rupee"></i> 399</p>
             <a class="shop-link text-muted disabled" href="#shop">Coming Soon</a>
           </div>
         </div>
@@ -223,42 +179,80 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.png" alt="">
+        <div class="col-lg-8 timeline-image">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/about/1.jpg" alt="First slide">
               </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2018-2019</h4>
-                  <h4 class="subheading">Crafts In Books</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="small text-muted text-justify">The children, the tiny little beings are impressionable. They can quickly adapt and learn from the sources available to them. Based on this concept, Mr. Siva Reddy, the Founder and Director of Omtimus Private Limited has launched brand of books, which he named as “Crafts in Books”. The man himself is an ardent lover of toy and games. He has been always interested in making toys, but could not achieve the results until now, as he feels plastic or other materials are way too expensive. So, he chose paper because of its affordability and eco-friendly attribute. He knew that children can explore the creative world better through arts and crafts.</p>
-                </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/2.jpg" alt="Second slide">
               </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/3.jpg" alt="Third slide">
               </div>
-            </li>
-          </ul>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/4.jpg" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/5.jpg" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/6.jpg" alt="Sixth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/7.jpg" alt="Seventh slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/8.jpg" alt="Eighth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/9.jpg" alt="Ninth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/about/10.jpg" alt="Tenth slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
+        
+        <div class="col-lg-4 timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="subheading">Crafts In Books</h4>
+          </div>
+          <div class="timeline-body">
+            <p class="small text-muted text-justify">The children, the tiny little beings are impressionable. They can quickly adapt and learn from the sources available to them. Based on this concept, Mr. Siva Reddy, the Founder and Director of Omtimus Private Limited has launched brand of books, which he named as “Crafts in Books”. The man himself is an ardent lover of toy and games. He has been always interested in making toys, but could not achieve the results until now, as he feels plastic or other materials are way too expensive. So, he chose paper because of its affordability and eco-friendly attribute. He knew that children can explore the creative world better through arts and crafts.</p>
+          </div>
+        </div>    
       </div>
     </div>
   </section>
 
-  <!-- Clients -->
-  <!-- <section class="py-5"> -->
+  <!-- Marquee -->
     <marquee>
       <img class="d-block mx-auto" src="img/carnival.png" alt="">
     </marquee>
-  <!-- </section> -->
-
+  
   <!-- Contact -->
   <section id="contact">
     <div class="container">
