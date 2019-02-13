@@ -47,6 +47,30 @@
     $('.navbar').removeClass('d-none');
   })
 
+  // Testimonials
+  function testimonials_slider() {
+    if ($('.testi_slider').length) {
+      $('.testi_slider').owlCarousel({
+        loop: false,
+        margin: 30,
+        items: 2,
+        autoplay: true,
+        smartSpeed: 2500,
+        dots: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          991: {
+            items: 2
+          }
+        }
+      });
+    }
+  }
+  testimonials_slider();
+
   /* Get iframe src attribute value i.e. YouTube video url
   and store it in a variable */
   var url = $("#videoIframe").attr('src');
