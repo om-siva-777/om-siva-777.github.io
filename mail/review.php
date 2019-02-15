@@ -23,8 +23,8 @@
     $fileType = $_FILES['imagefile']['type'];
     $fileExtension = strtolower(end(explode('.',$fileName)));
 
-    $name = strip_tags(htmlspecialchars($_POST['name']));
-    $message = strip_tags(htmlspecialchars($_POST['message']));
+    // $name = strip_tags(htmlspecialchars($_POST['name']));
+    // $message = strip_tags(htmlspecialchars($_POST['message']));
 
     $uploadPath = $currentDir . $uploadDirectory . basename($value); 
 
@@ -56,13 +56,16 @@
 
         if ($didUpload) {
             echo "The file " . basename($fileName) . " has been uploaded";
+            return true;
         } else {
             echo "An error occurred somewhere. Try again or contact the admin";
+            return false;
         }
     } else {
         foreach ($errors as $error) {
             echo $error . "These are the errors" . "\n";
+            return false;
         }
     }
-
+return true;         
 ?>
