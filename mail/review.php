@@ -1,5 +1,5 @@
 <?php
-    $currentDir = getcwd();
+    $currentDir = str_replace(basename(dirname(__FILE__)),"",dirname(__FILE__));
     $uploadDirectory = "/img/review/";
 
     $filecount = 0;
@@ -26,13 +26,13 @@
     // $name = strip_tags(htmlspecialchars($_POST['name']));
     // $message = strip_tags(htmlspecialchars($_POST['message']));
 
-    $uploadPath = $currentDir . $uploadDirectory . basename($value); 
+    $uploadPath = $currentDir . $uploadDirectory . $value . "." . $fileExtension; 
 
     if(isset($_POST['name']) && isset($_POST['message'])) {
         $data = $_POST['name'] . "\n" . $_POST['message'] . "\r\n";
         $ret = file_put_contents($currentDir . $uploadDirectory. $value.'.txt', $data, FILE_APPEND | LOCK_EX);
         if($ret === false) {
-            die('There was an error writing this file');
+            die('There was an error writing this file '.$currentDir . $uploadDirectory. $value.'.txt');
         }
         else {
             echo "$ret bytes written to file";
@@ -44,21 +44,21 @@
 
     
     if (! in_array($fileExtension,$fileExtensions)) {
-        $errors[] = "This file extension is not allowed. Please upload a JPEG or PNG file";
+        $errors[] = "\nThis file extension is not allowed. Please upload a JPEG or PNG file";
     }
 
     if ($fileSize > 2000000) {
-        $errors[] = "This file is more than 2MB. Sorry, it has to be less than or equal to 2MB";
+        $errors[] = "\nThis file is more than 2MB. Sorry, it has to be less than or equal to 2MB";
     }
 
     if (empty($errors)) {
         $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
 
         if ($didUpload) {
-            echo "The file " . basename($fileName) . " has been uploaded";
+            echo "\nThe file " . $value. "." . $fileExtension . " has been uploaded";
             return true;
         } else {
-            echo "An error occurred somewhere. Try again or contact the admin";
+            echo "\nAn error occurred somewhere. Try again or contact the admin";
             return false;
         }
     } else {
