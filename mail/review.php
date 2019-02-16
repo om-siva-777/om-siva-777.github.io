@@ -6,11 +6,12 @@
     $files = glob($currentDir . $uploadDirectory . "*");
     if ($files){
      $filecount = count($files);
+     echo "$filecount in $currentDir$uploadDirectory";
     }
     if ($filecount==0){
         $value=1;
     } else{
-        $value=$filecount/2;
+        $value=($filecount/2)+1;
     }
 
     $errors = []; // Store all foreseen and unforseen errors here
