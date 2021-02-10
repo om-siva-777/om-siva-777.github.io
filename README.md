@@ -7,7 +7,3 @@ Start Bootstrap is an open source library of free Bootstrap templates and themes
 
 * https://startbootstrap.com
 * https://twitter.com/SBootstrap
-
-## Copyright and License
-&copy; Omitmus Pvt Ltd  
-- **Author**: [Harshad Reddy Nalla](www.github.com/harshad16)
