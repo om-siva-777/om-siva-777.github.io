@@ -399,7 +399,7 @@ header.masthead .intro-text .intro-heading {
 
 .miniatures .miniatures-inner {
   position: relative;
-  padding: 5rem;
+  padding: 0.5rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
@@ -423,7 +423,7 @@ header.masthead .intro-text .intro-heading {
 
 .nanorts .nanorts-inner {
   position: relative;
-  padding: 5rem;
+  padding: 0.5rem;
   margin: 0.5rem;
   background-color: rgba(255, 255, 255, 0.85);
 }
