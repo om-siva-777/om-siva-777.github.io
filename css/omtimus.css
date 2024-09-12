@@ -761,6 +761,13 @@ header.masthead .intro-text .intro-heading {
   }
 }
 
+.placeholder-placeholder {
+  height: 315; /* Adjust height as needed */
+  width: 560;
+  background-color: #e9ecef; /* Light gray background */
+}
+
+
 .video-wrapper {
   margin: 20px 0;
   position: relative;
